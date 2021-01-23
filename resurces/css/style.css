@@ -1,0 +1,22 @@
+:root {
+    --fuente: 'Roboto', sans-serif;
+    --colorFondo: #18191B;
+    --colorBotones: #393A3C;
+    --colorFondoElementos: #242527;
+    --colorText: #FEFEFE;
+    --grisClaro: #646567;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --azul: #0b1d4a;
+    --azulClaro: #0C2461; 
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    background-color: var(--colorFondo);
+}
