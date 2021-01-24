@@ -41,6 +41,19 @@ body{
     padding: 1.5rem;
     background-color: var(--azul);
     border-radius: .5rem;
+    transition: all 150ms ease-in;
+}
+.btn:hover{
+    background-color: var(--azulClaro);
+}
+.btn-secundario{
+    padding: 1rem;
+    border: 3px solid var(--colorText);
+    border-radius: 1rem;
+    transition: all 150ms ease-in;
+}
+.btn-secundario:hover{
+    background-color: var(--grisClaro);
 }
 
 /*Globales*/
@@ -143,7 +156,7 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10rem;
+    height: 8rem;
 }
 .footer-icon-container{
     display: flex;
@@ -192,7 +205,6 @@ li{
     border-radius: 1rem;
     padding: 5rem;
     height: 65rem;
-    position: -webkit-sticky;
     position: sticky;
     top: 11rem;
 }
@@ -219,4 +231,42 @@ li{
 .code__li,
 .google__li{
     margin-bottom: 1rem;
+}
+
+/*Tarjetas trabajos*/
+/*==========================================================================================================================================*/
+.trabajo-card{
+    width: 85%;
+    margin: 0 auto 2rem auto;
+    display: flex;
+    background-color: var(--colorFondoElementos);
+    border-radius: 1rem;
+}
+.trabajo-card__img-container{
+    width: 110%;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.trabajo-card__img{
+    max-width: 100%;
+    height: auto;
+}
+.info-container{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.trabajo-card__title{
+    margin: 4rem 0 3rem 0;
+}
+.trabajo-card__info{
+    margin-bottom: 3rem;
+}
+.btn-container{
+    display: flex;
+    gap: 4rem;
+    justify-content: right;
+}
+
+.trabajo-card__btn-principal{
+    padding: 1rem;
 }
