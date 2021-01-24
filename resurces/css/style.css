@@ -55,12 +55,17 @@ h1{
 }
 h2{
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: bold;
     color: var(--colorText);
 }
 h3{
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: bold;
+    color: var(--colorText);
+}
+h4{
+    font-size: 1.8rem;
+    font-weight: bold;
     color: var(--colorText);
 }
 p{
@@ -73,22 +78,14 @@ a{
     font-weight: 500;
     color: var(--colorText);
 }
+li{
+    color: var(--colorText);
+    font-size: 1.6rem;
+}
 
-/*Header*/
+/*Navigation*/
 /*===========================================================================*/
-.header {
-    background-image: url(../img/Header.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 79rem;
-}
-.color-header{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .5);
-}
+
 .nav-container{
     display: flex;
     justify-content: space-between;
@@ -116,135 +113,23 @@ a{
     position: relative;
     bottom: .3rem;
 }
-.header-text{
-    display: flex;
-    justify-content: flex-end;
-}
-.header__text__info{
-    width: 40%;
-    font-size: 6rem;
-    position: absolute;
-    top: 35%;
-}
-.header__normal{
-    font-weight: normal;
-    font-size: 3rem;
-}
-
-/*Sobre mi*/
-/*==================================================================*/
-.sobre-mi{
-    margin: 5rem auto;
-    display: flex;
-}
-.sobre-mi__img{
-    width: 25rem;
-    height: 25rem;
-    border-radius: 12.5rem;
-}
-.sobre-mi__info {
-    margin: auto 0 auto 6.5rem;
-}
-.sobre-mi__info__title{
-    margin-bottom: 3rem;
-}
-.sobre-mi__info__text{
-    line-height: 3rem;
-}
-
-/*Servicios*/
-/*=====================================================================*/
-.servicios{
+.nav-bg{
     background-color: var(--colorFondoElementos);
-    padding: 5rem 0;
-}
-.servicios__title{
-    text-align: center;
-    margin-bottom: 5rem;
-}
-.grid-serv{
-    display: grid;
-    grid-template-columns: 25rem 25rem;
-    column-gap: 7rem;
-    justify-content: center;
-}
-.servicios__card{
-    height: 35rem;
-    width: 25rem;
-    display: flex;
-    flex-direction: column;
-}
-.servicios__card__icon{
-    height: 20rem;
-    width: 20rem;
-    margin: 0 auto;
-}
-.servicios__card__title{
-    margin: 2rem 0;
-    text-align: center;
-}
-.servicios__card__info{
-    text-align: center;
-}
-.servicios__btn-container{
-    display: flex;
-    justify-content: flex-end;
-}
-.servicios__btn{
-    margin-top: 5rem;
-
-    transition: all 100ms ease-in;
-}
-.servicios__btn:hover{
-    background-color: var(--azulClaro);
-}
-
-/*Trabajos*/
-/*=============================================================*/
-.trabajos{
-    background-color: var(--colorFondoElementos);
-    margin-top: 2rem;
-    padding: 5rem 0;
-}
-.trabajos__title{
-    text-align: center;
-    margin-bottom: 5rem;
-}
-.trabajos-cards-container{
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 28rem);
-    column-gap: 7rem;
-    row-gap: 7rem;
-    justify-content: center;
-}
-.trabajos__card{
-    transition: all 200ms ease-in;
-}
-.trabajos__card:hover{
-    background-color: var(--grisClaro);
-    border-radius: .5rem;
-    box-shadow: -1rem 1rem 0 var(--negro);
-    position: relative;
-    bottom: .5rem;
-    left: .5rem;
-}
-.container-img__trabajo-cards{
+    height: 8rem;
+    position: fixed;
     width: 100%;
-    overflow: hidden;
-    height: 25rem;
-    border-radius: .5rem;
+    margin-top: -13rem;
 }
-.trabajos__card__img{
-    max-width: 100%;
+.nav-container{
+    height: 100%;
 }
-.trabajos__card__title{
-    text-align: center;
-    margin: 2rem 0;
+.nav{
+    margin: 0;
 }
-.trabajos__card__info{
-    text-align: center;
+.logo{
+    margin: 0;
 }
+
 
 /*Footer*/
 /*================================================================*/
@@ -267,4 +152,71 @@ a{
 .footer__icon{
     font-size: 4rem;
     color: var(--colorText);
+}
+
+/*Certificados*/
+/*==============================================================================*/
+.title{
+    text-align: center;
+    margin: 13rem 0 5rem 0;
+}
+.grid-cert{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 10rem;
+    justify-items: stretch;
+}
+.cert-bg{
+    background-color: var(--colorFondoElementos);
+    border-radius: 1rem;
+    padding: 5rem 0;
+}
+.cert-title{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.cert-container{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+.cert__img{
+    width: 100%;
+    height: auto;
+}
+
+/*Autenticar*/
+/*==============================================================================*/
+.autenticar{
+    background-color: var(--colorFondoElementos);
+    border-radius: 1rem;
+    padding: 5rem;
+    height: 65rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 11rem;
+}
+.autenticar-title{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.autenticar-code{
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--grisClaro);
+}
+.list-container{
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+}
+.code__title,
+.google__title{
+    margin-bottom: 2rem;
+}
+.code__info, 
+.google__info{
+    margin-bottom: 2rem;
+}
+.code__li,
+.google__li{
+    margin-bottom: 1rem;
 }
