@@ -307,6 +307,9 @@ li{
     background-color: var(--colorFondoElementos);
     border-radius: 1rem;
 }
+.card-phone{
+    display: none;
+}
 .trabajo-card__img-container{
     width: 110%;
     overflow: hidden;
@@ -331,7 +334,25 @@ li{
     gap: 4rem;
     justify-content: right;
 }
-
 .trabajo-card__btn-principal{
     padding: 1rem;
+}
+@media (max-width: 480px) {
+    .trabajo-card{
+        width: 100%;
+        flex-direction: column;
+        height: 45rem;
+    }
+    .trabajo-card__img-container{
+        width: 100%;
+    }
+    .trabajo-card__title{
+        margin: 2rem 0;
+    }
+    .card-phone{
+        display: block;
+    }
+    .card-desktop{
+        display: none;
+    }
 }
