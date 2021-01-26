@@ -31,6 +31,19 @@ body{
     max-width: 120rem;
     margin: 0 auto;
 }
+@media (max-width: 1200px) {
+    .container{
+        max-width: 90%;
+    }
+}
+@media (max-width: 480px) {
+    .container{
+        max-width: 95%;
+    }
+}
+.container-content{
+    max-width: 120rem;
+}
 .no-margin{
     margin: 0;
 }
@@ -238,7 +251,7 @@ li{
     width: 100%;
     height: auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .container{
         width: 100%;
     }
@@ -292,7 +305,7 @@ li{
 .google__li{
     margin-bottom: 1rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .autenticar{
         padding: 5rem 1rem;
     }
@@ -337,7 +350,7 @@ li{
 .trabajo-card__btn-principal{
     padding: 1rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .grid-cards{
         width: 95%;
         display: grid;
@@ -365,6 +378,7 @@ li{
 @media (max-width: 480px) {
     .grid-cards{
         display: block;
+        width: 100%;
     }
     .trabajo-card{
         width: 100%;

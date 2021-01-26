@@ -29,6 +29,7 @@ body{
 /*===========================================================================*/
 .container{
     max-width: 120rem;
+    width: 90%;
     margin: 0 auto;
 }
 .no-margin{
@@ -130,6 +131,47 @@ a{
     font-weight: normal;
     font-size: 3rem;
 }
+@media (max-width: 1000px) {
+    .header{
+        height: 70rem;
+    }
+    .header__text__info{
+        width: 50%;
+        font-size: 4.5rem;
+    }
+    .header__normal{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 480px) {
+    .nav-container{
+        display: block;
+    }
+    .logo{
+        text-align: center;
+        font-size: 4rem;
+    }
+    .nav{
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+        margin-top: 1rem;
+    }
+    .nav__btn{
+        margin: 0 0;
+        text-align: center;
+        padding: 1rem;
+    }
+    .nav__btn:hover{
+        background-color: var(--grisClaro);
+    }
+    .header__text__info{
+        top: 40%;
+    }
+    .header__text__info{
+        width: 85%;
+    }
+}
 
 /*Sobre mi*/
 /*==================================================================*/
@@ -150,6 +192,20 @@ a{
 }
 .sobre-mi__info__text{
     line-height: 3rem;
+}
+@media (max-width: 768px) {
+    .sobre-mi__info__text{
+        line-height: 2.5rem;
+    }
+}
+@media (max-width: 480px) {
+    .sobre-mi{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sobre-mi__info{
+        margin: 2rem 0 0 0;
+    }
 }
 
 /*Servicios*/
@@ -198,6 +254,16 @@ a{
 .servicios__btn:hover{
     background-color: var(--azulClaro);
 }
+@media (max-width: 480px) {
+    .grid-serv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .servicios__card-last{
+        margin-top: 5rem;
+    }
+}
 
 /*Trabajos*/
 /*=============================================================*/
@@ -245,6 +311,29 @@ a{
 .trabajos__card__info{
     text-align: center;
 }
+@media (max-width: 1000px) {
+    .card-desktop-index{
+        display: none;
+    }
+    .trabajos-cards-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 480px) {
+    .trabajos-cards-container{
+        display: block;
+    }
+    .trabajos__card{
+        margin-top: 1rem;
+        border-bottom: 1px solid var(--grisClaro);
+    }
+    .trabajos__card__info{
+        margin-bottom: 4rem;
+    }
+    .card-tablet-index{
+        display: none;
+    }
+}
 
 /*Footer*/
 /*================================================================*/
@@ -267,4 +356,18 @@ a{
 .footer__icon{
     font-size: 4rem;
     color: var(--colorText);
+}
+@media (max-width: 480px) {
+    .footer__icon{
+        font-size: 3rem;
+    }
+    .footer-icon-container{
+        gap: 2rem;
+    }
+    .copy-container{
+        width: 50%;
+    }
+    .copy{
+        font-size: 1.2rem;
+    }
 }
