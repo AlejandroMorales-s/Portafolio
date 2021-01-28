@@ -313,7 +313,8 @@ li{
 
 /*Tarjetas trabajos*/
 /*==========================================================================================================================================*/
-.trabajo-card{
+.trabajo-card,
+.contacto-card{
     width: 85%;
     margin: 0 auto 2rem auto;
     display: flex;
@@ -396,5 +397,65 @@ li{
     }
     .card-desktop{
         display: none;
+    }
+}
+
+/*Contacto*/
+/*==================================================================*/
+.container-contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+.icon-contact{
+    font-size: 20rem;
+    margin-left: 2rem;
+}
+.contacto-card{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.contacto-card--tablet{
+    display: none;
+}
+.contacto-card--correo{
+    grid-area: 2 / 1 / 3 / 3;
+    width: 50%;
+}
+.contacto-info-container{
+    margin-left: 2rem;
+}
+.contacto-card__info{
+    margin: 2rem 0;
+}
+@media (max-width: 1000px) {
+    .container-contacto{
+        display: block;
+    }
+    .contacto-card--tablet{
+        display: flex;
+    }
+    .contacto-card--desktop{
+        display: none;
+    }
+    .icon-contact--tablet{
+        margin-left: 0;
+        margin-right: 2rem;
+    }
+    .contacto-card{
+        width: 90%;
+    }
+}
+@media (max-width: 480px) {
+    .contacto-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contacto-card--tablet{
+        display: none;
+    }
+    .icon-contact{
     }
 }
